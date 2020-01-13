@@ -49,6 +49,8 @@ x64/
 [Bb]in/
 [Oo]bj/
 
+x32/
+
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
