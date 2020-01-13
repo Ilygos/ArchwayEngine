@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12650C4-C5B1-3724-9468-076EEBEDB4F1}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ArchwayEngine</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Maxence\ArchwayEngine\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CGFX5.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CGFX5</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Maxence\ArchwayEngine\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CGFX5.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CGFX5</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Maxence\ArchwayEngine\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CGFX5.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CGFX5</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Maxence\ArchwayEngine\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CGFX5.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CGFX5</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Maxence\ArchwayEngine\headers;D:\Maxence\ArchwayEngine\sources;D:\Maxence\ArchwayEngine\src;D:\Maxence\ArchwayEngine\lib\glew\include;D:\Maxence\ArchwayEngine\lib\SDL2\include;D:\Maxence\ArchwayEngine\lib\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -c</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Maxence\ArchwayEngine\headers;D:\Maxence\ArchwayEngine\sources;D:\Maxence\ArchwayEngine\src;D:\Maxence\ArchwayEngine\lib\glew\include;D:\Maxence\ArchwayEngine\lib\SDL2\include;D:\Maxence\ArchwayEngine\lib\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Maxence\ArchwayEngine\headers;D:\Maxence\ArchwayEngine\sources;D:\Maxence\ArchwayEngine\src;D:\Maxence\ArchwayEngine\lib\glew\include;D:\Maxence\ArchwayEngine\lib\SDL2\include;D:\Maxence\ArchwayEngine\lib\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;lib\glew\lib\Release\Win32\glew32.lib;lib\SDL2\lib\x86\SDL2.lib;lib\Assimp\lib\x86\assimp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Maxence/ArchwayEngine/Debug/CGFX5.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Maxence/ArchwayEngine/Debug/CGFX5.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Maxence\ArchwayEngine\headers;D:\Maxence\ArchwayEngine\sources;D:\Maxence\ArchwayEngine\src;D:\Maxence\ArchwayEngine\lib\glew\include;D:\Maxence\ArchwayEngine\lib\SDL2\include;D:\Maxence\ArchwayEngine\lib\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -c</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Maxence\ArchwayEngine\headers;D:\Maxence\ArchwayEngine\sources;D:\Maxence\ArchwayEngine\src;D:\Maxence\ArchwayEngine\lib\glew\include;D:\Maxence\ArchwayEngine\lib\SDL2\include;D:\Maxence\ArchwayEngine\lib\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Maxence\ArchwayEngine\headers;D:\Maxence\ArchwayEngine\sources;D:\Maxence\ArchwayEngine\src;D:\Maxence\ArchwayEngine\lib\glew\include;D:\Maxence\ArchwayEngine\lib\SDL2\include;D:\Maxence\ArchwayEngine\lib\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;lib\glew\lib\Release\Win32\glew32.lib;lib\SDL2\lib\x86\SDL2.lib;lib\Assimp\lib\x86\assimp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Maxence/ArchwayEngine/Release/CGFX5.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Maxence/ArchwayEngine/Release/CGFX5.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Maxence\ArchwayEngine\headers;D:\Maxence\ArchwayEngine\sources;D:\Maxence\ArchwayEngine\src;D:\Maxence\ArchwayEngine\lib\glew\include;D:\Maxence\ArchwayEngine\lib\SDL2\include;D:\Maxence\ArchwayEngine\lib\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -c</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Maxence\ArchwayEngine\headers;D:\Maxence\ArchwayEngine\sources;D:\Maxence\ArchwayEngine\src;D:\Maxence\ArchwayEngine\lib\glew\include;D:\Maxence\ArchwayEngine\lib\SDL2\include;D:\Maxence\ArchwayEngine\lib\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Maxence\ArchwayEngine\headers;D:\Maxence\ArchwayEngine\sources;D:\Maxence\ArchwayEngine\src;D:\Maxence\ArchwayEngine\lib\glew\include;D:\Maxence\ArchwayEngine\lib\SDL2\include;D:\Maxence\ArchwayEngine\lib\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;lib\glew\lib\Release\Win32\glew32.lib;lib\SDL2\lib\x86\SDL2.lib;lib\Assimp\lib\x86\assimp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Maxence/ArchwayEngine/MinSizeRel/CGFX5.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Maxence/ArchwayEngine/MinSizeRel/CGFX5.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Maxence\ArchwayEngine\headers;D:\Maxence\ArchwayEngine\sources;D:\Maxence\ArchwayEngine\src;D:\Maxence\ArchwayEngine\lib\glew\include;D:\Maxence\ArchwayEngine\lib\SDL2\include;D:\Maxence\ArchwayEngine\lib\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -c</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Maxence\ArchwayEngine\headers;D:\Maxence\ArchwayEngine\sources;D:\Maxence\ArchwayEngine\src;D:\Maxence\ArchwayEngine\lib\glew\include;D:\Maxence\ArchwayEngine\lib\SDL2\include;D:\Maxence\ArchwayEngine\lib\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Maxence\ArchwayEngine\headers;D:\Maxence\ArchwayEngine\sources;D:\Maxence\ArchwayEngine\src;D:\Maxence\ArchwayEngine\lib\glew\include;D:\Maxence\ArchwayEngine\lib\SDL2\include;D:\Maxence\ArchwayEngine\lib\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;lib\glew\lib\Release\Win32\glew32.lib;lib\SDL2\lib\x86\SDL2.lib;lib\Assimp\lib\x86\assimp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Maxence/ArchwayEngine/RelWithDebInfo/CGFX5.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Maxence/ArchwayEngine/RelWithDebInfo/CGFX5.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Maxence\ArchwayEngine\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Maxence/ArchwayEngine/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Maxence/ArchwayEngine -BD:/Maxence/ArchwayEngine --check-stamp-file D:/Maxence/ArchwayEngine/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeCCompiler.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeSystem.cmake;D:\Maxence\ArchwayEngine\cmake\FindASSIMP.cmake;D:\Maxence\ArchwayEngine\cmake\FindGLEW.cmake;D:\Maxence\ArchwayEngine\cmake\FindSDL2.cmake;D:\Maxence\ArchwayEngine\res\models\cube.obj;D:\Maxence\ArchwayEngine\res\models\levelTest.obj;D:\Maxence\ArchwayEngine\res\models\monkey3.obj;D:\Maxence\ArchwayEngine\res\models\plane.obj;D:\Maxence\ArchwayEngine\res\models\plane2.obj;D:\Maxence\ArchwayEngine\res\models\plane3.obj;D:\Maxence\ArchwayEngine\res\models\plane4.obj;D:\Maxence\ArchwayEngine\res\models\sphere.obj;D:\Maxence\ArchwayEngine\res\models\terrain02.obj;D:\Maxence\ArchwayEngine\res\shaders\basicShader.glsl;D:\Maxence\ArchwayEngine\res\shaders\common.glh;D:\Maxence\ArchwayEngine\res\shaders\nullShader.glsl;D:\Maxence\ArchwayEngine\res\textures\black.png;D:\Maxence\ArchwayEngine\res\textures\bricks.dds;D:\Maxence\ArchwayEngine\res\textures\bricks.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2_disp.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2_normal.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2_normal.png;D:\Maxence\ArchwayEngine\res\textures\bricks_disp.png;D:\Maxence\ArchwayEngine\res\textures\bricks_normal.jpg;D:\Maxence\ArchwayEngine\res\textures\defaultTexture.png;D:\Maxence\ArchwayEngine\res\textures\default_disp.png;D:\Maxence\ArchwayEngine\res\textures\default_normal.jpg;D:\Maxence\ArchwayEngine\res\textures\test.png;D:\Maxence\ArchwayEngine\res\textures\white.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Maxence\ArchwayEngine\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Maxence/ArchwayEngine/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Maxence/ArchwayEngine -BD:/Maxence/ArchwayEngine --check-stamp-file D:/Maxence/ArchwayEngine/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeCCompiler.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeSystem.cmake;D:\Maxence\ArchwayEngine\cmake\FindASSIMP.cmake;D:\Maxence\ArchwayEngine\cmake\FindGLEW.cmake;D:\Maxence\ArchwayEngine\cmake\FindSDL2.cmake;D:\Maxence\ArchwayEngine\res\models\cube.obj;D:\Maxence\ArchwayEngine\res\models\levelTest.obj;D:\Maxence\ArchwayEngine\res\models\monkey3.obj;D:\Maxence\ArchwayEngine\res\models\plane.obj;D:\Maxence\ArchwayEngine\res\models\plane2.obj;D:\Maxence\ArchwayEngine\res\models\plane3.obj;D:\Maxence\ArchwayEngine\res\models\plane4.obj;D:\Maxence\ArchwayEngine\res\models\sphere.obj;D:\Maxence\ArchwayEngine\res\models\terrain02.obj;D:\Maxence\ArchwayEngine\res\shaders\basicShader.glsl;D:\Maxence\ArchwayEngine\res\shaders\common.glh;D:\Maxence\ArchwayEngine\res\shaders\nullShader.glsl;D:\Maxence\ArchwayEngine\res\textures\black.png;D:\Maxence\ArchwayEngine\res\textures\bricks.dds;D:\Maxence\ArchwayEngine\res\textures\bricks.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2_disp.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2_normal.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2_normal.png;D:\Maxence\ArchwayEngine\res\textures\bricks_disp.png;D:\Maxence\ArchwayEngine\res\textures\bricks_normal.jpg;D:\Maxence\ArchwayEngine\res\textures\defaultTexture.png;D:\Maxence\ArchwayEngine\res\textures\default_disp.png;D:\Maxence\ArchwayEngine\res\textures\default_normal.jpg;D:\Maxence\ArchwayEngine\res\textures\test.png;D:\Maxence\ArchwayEngine\res\textures\white.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Maxence\ArchwayEngine\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/Maxence/ArchwayEngine/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Maxence/ArchwayEngine -BD:/Maxence/ArchwayEngine --check-stamp-file D:/Maxence/ArchwayEngine/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeCCompiler.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeSystem.cmake;D:\Maxence\ArchwayEngine\cmake\FindASSIMP.cmake;D:\Maxence\ArchwayEngine\cmake\FindGLEW.cmake;D:\Maxence\ArchwayEngine\cmake\FindSDL2.cmake;D:\Maxence\ArchwayEngine\res\models\cube.obj;D:\Maxence\ArchwayEngine\res\models\levelTest.obj;D:\Maxence\ArchwayEngine\res\models\monkey3.obj;D:\Maxence\ArchwayEngine\res\models\plane.obj;D:\Maxence\ArchwayEngine\res\models\plane2.obj;D:\Maxence\ArchwayEngine\res\models\plane3.obj;D:\Maxence\ArchwayEngine\res\models\plane4.obj;D:\Maxence\ArchwayEngine\res\models\sphere.obj;D:\Maxence\ArchwayEngine\res\models\terrain02.obj;D:\Maxence\ArchwayEngine\res\shaders\basicShader.glsl;D:\Maxence\ArchwayEngine\res\shaders\common.glh;D:\Maxence\ArchwayEngine\res\shaders\nullShader.glsl;D:\Maxence\ArchwayEngine\res\textures\black.png;D:\Maxence\ArchwayEngine\res\textures\bricks.dds;D:\Maxence\ArchwayEngine\res\textures\bricks.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2_disp.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2_normal.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2_normal.png;D:\Maxence\ArchwayEngine\res\textures\bricks_disp.png;D:\Maxence\ArchwayEngine\res\textures\bricks_normal.jpg;D:\Maxence\ArchwayEngine\res\textures\defaultTexture.png;D:\Maxence\ArchwayEngine\res\textures\default_disp.png;D:\Maxence\ArchwayEngine\res\textures\default_normal.jpg;D:\Maxence\ArchwayEngine\res\textures\test.png;D:\Maxence\ArchwayEngine\res\textures\white.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Maxence\ArchwayEngine\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/Maxence/ArchwayEngine/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Maxence/ArchwayEngine -BD:/Maxence/ArchwayEngine --check-stamp-file D:/Maxence/ArchwayEngine/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeCCompiler.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;D:\Maxence\ArchwayEngine\CMakeFiles\3.16.2\CMakeSystem.cmake;D:\Maxence\ArchwayEngine\cmake\FindASSIMP.cmake;D:\Maxence\ArchwayEngine\cmake\FindGLEW.cmake;D:\Maxence\ArchwayEngine\cmake\FindSDL2.cmake;D:\Maxence\ArchwayEngine\res\models\cube.obj;D:\Maxence\ArchwayEngine\res\models\levelTest.obj;D:\Maxence\ArchwayEngine\res\models\monkey3.obj;D:\Maxence\ArchwayEngine\res\models\plane.obj;D:\Maxence\ArchwayEngine\res\models\plane2.obj;D:\Maxence\ArchwayEngine\res\models\plane3.obj;D:\Maxence\ArchwayEngine\res\models\plane4.obj;D:\Maxence\ArchwayEngine\res\models\sphere.obj;D:\Maxence\ArchwayEngine\res\models\terrain02.obj;D:\Maxence\ArchwayEngine\res\shaders\basicShader.glsl;D:\Maxence\ArchwayEngine\res\shaders\common.glh;D:\Maxence\ArchwayEngine\res\shaders\nullShader.glsl;D:\Maxence\ArchwayEngine\res\textures\black.png;D:\Maxence\ArchwayEngine\res\textures\bricks.dds;D:\Maxence\ArchwayEngine\res\textures\bricks.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2_disp.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2_normal.jpg;D:\Maxence\ArchwayEngine\res\textures\bricks2_normal.png;D:\Maxence\ArchwayEngine\res\textures\bricks_disp.png;D:\Maxence\ArchwayEngine\res\textures\bricks_normal.jpg;D:\Maxence\ArchwayEngine\res\textures\defaultTexture.png;D:\Maxence\ArchwayEngine\res\textures\default_disp.png;D:\Maxence\ArchwayEngine\res\textures\default_normal.jpg;D:\Maxence\ArchwayEngine\res\textures\test.png;D:\Maxence\ArchwayEngine\res\textures\white.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Maxence\ArchwayEngine\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\core\application.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\core\common.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\core\memory.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\core\timing.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\core\window.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\dataStructures\array.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\dataStructures\map.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\dataStructures\string.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\input\iinput.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\aabb.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\color.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\intersects.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\math.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\matrix.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\plane.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\quaternion.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\sphere.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\transform.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\vecmath.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\vector.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\generic\cmwc4096.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\generic\genericMath.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\generic\genericMemory.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\generic\genericVecmath.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\opengl\openGLRenderDevice.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platform.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformApplication.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformMath.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformMemory.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformRenderDevice.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformSIMDInclude.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformTiming.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformVecmath.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformWindow.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\sdl\sdlApplication.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\sdl\sdlWindow.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\sdl\sdltiming.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\sse\sseVecmath.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\allocators.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\cursorstreamwrapper.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\document.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\encodedstream.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\encodings.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\error\en.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\error\error.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\filereadstream.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\filewritestream.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\fwd.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\biginteger.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\diyfp.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\dtoa.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\ieee754.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\itoa.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\meta.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\pow10.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\regex.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\stack.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\strtod.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\swap.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\memorybuffer.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\memorystream.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\msinttypes\stdint.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\pointer.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\prettywriter.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\rapidjson.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\reader.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\schema.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\stream.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\stringbuffer.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\writer.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\arrayBitmap.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\ddstexture.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\indexedModel.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\material.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\modelLoader.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\renderContext.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\renderDevice.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\renderTarget.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\sampler.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\shader.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\staticLibs\stb_image.h" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\texture.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\uniformBuffer.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\vertexArray.hpp" />
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\tests.hpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\core\memory.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\dataStructures\string.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\main.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\aabb.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\color.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\matrix.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\plane.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\quaternion.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\sphere.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\transform.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\vecmath.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\vector.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\platform\generic\cmwc4096.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\platform\generic\genericMemory.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\platform\opengl\openGLRenderDevice.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\platform\sdl\sdlApplication.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\platform\sdl\sdlWindow.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\platform\sdl\sdltiming.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\rendering\arrayBitmap.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\rendering\ddstexture.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\rendering\indexedModel.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\rendering\modelLoader.cpp" />
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\rendering\staticLibs\stb_image.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Maxence\ArchwayEngine\ZERO_CHECK.vcxproj">
+      <Project>{919AD2CE-8CE6-3C19-A045-6D056FC9C4DA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

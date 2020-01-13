@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Maxence\ArchwayEngine\CMakeFiles\ef88995a9c8cf74201a0ae4b3010b5a8\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{103722CC-B5EE-3D61-95D1-F3797DF05009}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

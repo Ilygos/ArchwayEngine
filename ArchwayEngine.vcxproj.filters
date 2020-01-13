@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\core\memory.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\dataStructures\string.cpp">
+      <Filter>src\dataStructures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\aabb.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\color.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\matrix.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\plane.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\quaternion.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\sphere.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\transform.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\vecmath.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\math\vector.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\platform\generic\cmwc4096.c">
+      <Filter>src\platform\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\platform\generic\genericMemory.cpp">
+      <Filter>src\platform\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\platform\opengl\openGLRenderDevice.cpp">
+      <Filter>src\platform\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\platform\sdl\sdlApplication.cpp">
+      <Filter>src\platform\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\platform\sdl\sdlWindow.cpp">
+      <Filter>src\platform\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\platform\sdl\sdltiming.cpp">
+      <Filter>src\platform\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\rendering\arrayBitmap.cpp">
+      <Filter>src\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\rendering\ddstexture.cpp">
+      <Filter>src\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\rendering\indexedModel.cpp">
+      <Filter>src\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\rendering\modelLoader.cpp">
+      <Filter>src\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\rendering\staticLibs\stb_image.c">
+      <Filter>src\rendering\staticLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Maxence\ArchwayEngine\src\test.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\core\application.hpp">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\core\common.hpp">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\core\memory.hpp">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\core\timing.hpp">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\core\window.hpp">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\dataStructures\array.hpp">
+      <Filter>src\dataStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\dataStructures\map.hpp">
+      <Filter>src\dataStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\dataStructures\string.hpp">
+      <Filter>src\dataStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\input\iinput.h">
+      <Filter>src\input</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\aabb.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\color.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\intersects.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\math.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\matrix.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\plane.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\quaternion.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\sphere.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\transform.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\vecmath.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\math\vector.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\generic\cmwc4096.h">
+      <Filter>src\platform\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\generic\genericMath.hpp">
+      <Filter>src\platform\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\generic\genericMemory.hpp">
+      <Filter>src\platform\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\generic\genericVecmath.hpp">
+      <Filter>src\platform\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\opengl\openGLRenderDevice.hpp">
+      <Filter>src\platform\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platform.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformApplication.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformMath.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformMemory.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformRenderDevice.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformSIMDInclude.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformTiming.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformVecmath.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\platformWindow.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\sdl\sdlApplication.hpp">
+      <Filter>src\platform\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\sdl\sdlWindow.hpp">
+      <Filter>src\platform\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\sdl\sdltiming.hpp">
+      <Filter>src\platform\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\platform\sse\sseVecmath.hpp">
+      <Filter>src\platform\sse</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\allocators.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\cursorstreamwrapper.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\document.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\encodedstream.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\encodings.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\error\en.h">
+      <Filter>src\rapidjson\error</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\error\error.h">
+      <Filter>src\rapidjson\error</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\filereadstream.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\filewritestream.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\fwd.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\biginteger.h">
+      <Filter>src\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\diyfp.h">
+      <Filter>src\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\dtoa.h">
+      <Filter>src\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\ieee754.h">
+      <Filter>src\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\itoa.h">
+      <Filter>src\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\meta.h">
+      <Filter>src\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\pow10.h">
+      <Filter>src\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\regex.h">
+      <Filter>src\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\stack.h">
+      <Filter>src\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\strfunc.h">
+      <Filter>src\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\strtod.h">
+      <Filter>src\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\internal\swap.h">
+      <Filter>src\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\istreamwrapper.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\memorybuffer.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\memorystream.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\msinttypes\inttypes.h">
+      <Filter>src\rapidjson\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\msinttypes\stdint.h">
+      <Filter>src\rapidjson\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\ostreamwrapper.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\pointer.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\prettywriter.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\rapidjson.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\reader.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\schema.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\stream.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\stringbuffer.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rapidjson\writer.h">
+      <Filter>src\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\arrayBitmap.hpp">
+      <Filter>src\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\ddstexture.hpp">
+      <Filter>src\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\indexedModel.hpp">
+      <Filter>src\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\material.hpp">
+      <Filter>src\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\modelLoader.hpp">
+      <Filter>src\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\renderContext.hpp">
+      <Filter>src\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\renderDevice.hpp">
+      <Filter>src\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\renderTarget.hpp">
+      <Filter>src\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\sampler.hpp">
+      <Filter>src\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\shader.hpp">
+      <Filter>src\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\staticLibs\stb_image.h">
+      <Filter>src\rendering\staticLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\texture.hpp">
+      <Filter>src\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\uniformBuffer.hpp">
+      <Filter>src\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\rendering\vertexArray.hpp">
+      <Filter>src\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Maxence\ArchwayEngine\src\tests.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Maxence\ArchwayEngine\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{EEF11DC6-3918-3634-89DF-C200E106FEB8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{3FDAF54D-E77F-3A3A-B82C-653237819FE1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\dataStructures">
+      <UniqueIdentifier>{602523E3-92F5-3B3F-94E9-C4CE172389EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\input">
+      <UniqueIdentifier>{09C0E02C-8BB5-382E-94C5-358E9A24E9D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\math">
+      <UniqueIdentifier>{48B8D962-220C-3E97-A0F2-41DF0971BE85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platform">
+      <UniqueIdentifier>{DD8C0D6A-1FC3-38E9-9746-FEF4D4BF1B34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platform\generic">
+      <UniqueIdentifier>{3C9F6567-09FA-3F87-96AD-09680B84AFAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platform\opengl">
+      <UniqueIdentifier>{465290E6-C9AF-3FF7-AE56-05496B1F2017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platform\sdl">
+      <UniqueIdentifier>{1D9256AB-BFD9-3B1A-95A7-F3C282BD8607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platform\sse">
+      <UniqueIdentifier>{9721199A-95CF-36A7-A526-7957FDF1E795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rapidjson">
+      <UniqueIdentifier>{45F71DAD-7721-313B-B03D-B70E33D20E45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rapidjson\error">
+      <UniqueIdentifier>{AFAF0771-23B5-33C7-BE11-DCAB6987497B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rapidjson\internal">
+      <UniqueIdentifier>{6E5F25E4-D697-3D12-AFFF-A73D698971C6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rapidjson\msinttypes">
+      <UniqueIdentifier>{5D601007-D808-313B-AFBF-5B21465987C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rendering">
+      <UniqueIdentifier>{E6C0917E-C80F-3C2D-B80D-7141D600166C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rendering\staticLibs">
+      <UniqueIdentifier>{62715BB6-50D1-3027-AC1A-8F82FD9E4076}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
