@@ -51,6 +51,11 @@ x64/
 
 x32/
 
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
