@@ -14,12 +14,17 @@
 #include "math/plane.hpp"
 #include "math/intersects.hpp"
 
+#include "input/InputMgr.h"
+
 // NOTE: Profiling reveals that in the current instanced rendering system:
 // - Updating the buffer takes more time than
 // - Calculating the transforms which takes more time than
 // - Performing the instanced draw
 static int runApp(Application* app)
 {
+	if (INPUT_MGR == nullptr)
+		new Archway::InputMgr();
+
 	Tests::runTests();
 	Window window(*app, 800, 600, "My Window!");
 
@@ -33,31 +38,10 @@ static int runApp(Application* app)
 	Array<MaterialSpec> modelMaterials;
 	ModelLoader::loadModels("./res/models/monkey3.obj", models,
 			modelMaterialIndices, modelMaterials);
-//	IndexedModel model;
-//	model.allocateElement(3); // Positions
-//	model.allocateElement(2); // TexCoords
-//	model.allocateElement(3); // Normals
-//	model.allocateElement(3); // Tangents
-//	model.setInstancedElementStartIndex(4); // Begin instanced data
-//	model.allocateElement(16); // Transform matrix
-//	
-//	model.addElement3f(0, -0.5f, -0.5f, 0.0f);
-//	model.addElement3f(0, 0.0f, 0.5f, 0.0f);
-//	model.addElement3f(0, 0.5f, -0.5f, 0.0f);
-//	model.addElement2f(1, 0.0f, 0.0f);
-//	model.addElement2f(1, 0.5f, 1.0f);
-//	model.addElement2f(1, 1.0f, 0.0f);
-//	model.addIndices3i(0, 1, 2);
 
 	VertexArray vertexArray(device, models[0], RenderDevice::USAGE_STATIC_DRAW);
 	Sampler sampler(device, RenderDevice::FILTER_LINEAR_MIPMAP_LINEAR);
-//	ArrayBitmap bitmap;
-//	bitmap.set(0,0, Color::WHITE.toInt());
-//	if(!bitmap.load("./res/textures/bricks.jpg")) {
-//		DEBUG_LOG("Main", LOG_ERROR, "Could not load texture!");
-//		return 1;
-//	}
-//	Texture texture(device, bitmap, RenderDevice::FORMAT_RGB, true, false);
+
 	DDSTexture ddsTexture;
 	if(!ddsTexture.load("./res/textures/bricks.dds")) {
 		DEBUG_LOG("Main", LOG_ERROR, "Could not load texture!");
@@ -78,7 +62,7 @@ static int runApp(Application* app)
 	float randScaleX = randZ * window.getWidth()/(float)window.getHeight();
 	float randScaleY = randZ;
 	
-	uint32 numInstances = 1000;
+	uint32 numInstances = 10;
 	Matrix transformMatrix(Matrix::identity());
 	Transform transform;
 	Array<Matrix> transformMatrixArray;
@@ -98,8 +82,7 @@ static int runApp(Application* app)
 	drawParams.faceCulling = RenderDevice::FACE_CULL_BACK;
 	drawParams.shouldWriteDepth = true;
 	drawParams.depthFunc = RenderDevice::DRAW_FUNC_LESS;
-//	drawParams.sourceBlend = RenderDevice::BLEND_FUNC_ONE;
-//	drawParams.destBlend = RenderDevice::BLEND_FUNC_ONE;
+
 	// End scene creation
 
 	uint32 fps = 0;
@@ -107,6 +90,7 @@ static int runApp(Application* app)
 	double fpsTimeCounter = 0.0;
 	double updateTimer = 1.0;
 	float frameTime = 1.0/60.0;
+	Archway::IApplicationEventHandler* eventHandler = new Archway::IApplicationEventHandler();
 	while(app->isRunning()) {
 		double currentTime = Time::getTime();
 		double passedTime = currentTime - lastTime;
@@ -124,7 +108,7 @@ static int runApp(Application* app)
 		
 		bool shouldRender = false;
 		while(updateTimer >= frameTime) {
-			app->processMessages(frameTime);
+			app->processMessages(frameTime, eventHandler);
 			// Begin scene update
 			transform.setRotation(Quaternion(Vector3f(1.0f, 1.0f, 1.0f).normalized(), amt*10.0f/11.0f));
 			for(uint32 i = 0; i < transformMatrixArray.size(); i++) {
