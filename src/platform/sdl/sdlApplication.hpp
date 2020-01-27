@@ -9,7 +9,7 @@ public:
 	static SDLApplication* create();
 	
 	virtual ~SDLApplication();
-	virtual void processMessages(double delta, Archway::IApplicationEventHandler* eventHandler);
+	virtual void processMessages(double delta);
 	virtual bool isRunning();
 private:
 	bool isAppRunning;

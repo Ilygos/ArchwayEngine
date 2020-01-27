@@ -33,7 +33,7 @@ SDLApplication::~SDLApplication()
 	}
 }
 
-void SDLApplication::processMessages(double delta, Archway::IApplicationEventHandler* eventHandler)
+void SDLApplication::processMessages(double delta)
 {
 	SDL_Event e;
 	(void)delta;
@@ -41,20 +41,19 @@ void SDLApplication::processMessages(double delta, Archway::IApplicationEventHan
 	while(SDL_PollEvent(&e)) {
 		switch(e.type){
 		case SDL_KEYDOWN:
-			eventHandler->onKeyDown(e.key.keysym.scancode, e.key.repeat != 0);
+			INPUT_MGR->OnKeyDown(e.key.keysym.scancode, e.key.repeat != 0);
 			break;
 		case SDL_KEYUP:
-			eventHandler->onKeyUp(e.key.keysym.scancode, e.key.repeat != 0);
+			INPUT_MGR->OnKeyUp(e.key.keysym.scancode, e.key.repeat != 0);
 			break;
 		case SDL_MOUSEBUTTONDOWN:
-			eventHandler->onMouseDown(e.button.button, e.button.clicks);
+			INPUT_MGR->OnMouseDown(e.button.button, e.button.clicks);
 			break;
 		case SDL_MOUSEBUTTONUP:
-			eventHandler->onMouseUp(e.button.button, e.button.clicks);
+			INPUT_MGR->OnMouseUp(e.button.button, e.button.clicks);
 			break;
 		case SDL_MOUSEMOTION:
-			eventHandler->onMouseMove(Vector2f(e.motion.x, e.motion.y), Vector2f(e.motion.xrel, e.motion.yrel));
-			INPUT_MGR->mousePosition = Vector2f(e.motion.x, e.motion.y);
+			INPUT_MGR->OnMouseMove(Vector2f(e.motion.x, e.motion.y), Vector2f(e.motion.xrel, e.motion.yrel));
 			break;
 		case SDL_QUIT:
 			isAppRunning = false;

@@ -14,6 +14,8 @@
 #include "math/plane.hpp"
 #include "math/intersects.hpp"
 
+#include "core/Macros.h"
+
 #include "input/InputMgr.h"
 
 // NOTE: Profiling reveals that in the current instanced rendering system:
@@ -28,6 +30,7 @@ static int runApp(Application* app)
 	Tests::runTests();
 	Window window(*app, 800, 600, "My Window!");
 
+	
 	// Begin scene creation
 	RenderDevice device(window);
 	RenderTarget target(device);
@@ -95,7 +98,6 @@ static int runApp(Application* app)
 		double currentTime = Time::getTime();
 		double passedTime = currentTime - lastTime;
 		lastTime = currentTime;
-
 		fpsTimeCounter += passedTime;
 		updateTimer += passedTime;
 
@@ -108,7 +110,7 @@ static int runApp(Application* app)
 		
 		bool shouldRender = false;
 		while(updateTimer >= frameTime) {
-			app->processMessages(frameTime, eventHandler);
+			app->processMessages(frameTime);
 			// Begin scene update
 			transform.setRotation(Quaternion(Vector3f(1.0f, 1.0f, 1.0f).normalized(), amt*10.0f/11.0f));
 			for(uint32 i = 0; i < transformMatrixArray.size(); i++) {

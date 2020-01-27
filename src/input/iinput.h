@@ -20,7 +20,7 @@
 class IInput
 {
 public:
-	enum
+	enum MouseButton
 	{
 		MOUSE_LEFT_BUTTON = 1,
 		MOUSE_MIDDLE_BUTTON = 2,
@@ -29,7 +29,7 @@ public:
 		MOUSE_WHEEL_DOWN = 5
 	};
 
-	enum
+	enum Key
 	{
 			KEY_UNKNOWN = 0,
 
